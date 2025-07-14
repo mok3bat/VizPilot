@@ -1,0 +1,4 @@
+.tableau_config.json
+data/vectorstore/
+venv/
+__pycache__/
