@@ -4,8 +4,8 @@ from agents.tableau_agent import search_metadata_with_vectors
 from services.embeddings import is_chroma_index_ready, build_vector_store
 from config_utils import load_config, save_config
 
-st.set_page_config(page_title="Intelligent Report Generator")
-st.title("📊 Intelligent Report Generator")
+st.set_page_config(page_title="VizPilot")
+st.title("📊 VizPilot")
 
 # === Load configuration early ===
 config = load_config()
