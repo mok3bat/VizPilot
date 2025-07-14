@@ -1,4 +1,4 @@
-# 📊 Intelligent Report Generator
+# 📊 VizPilot
 
 An interactive Streamlit-based web app that connects to **Tableau's Metadata API** to help users:
 
@@ -23,8 +23,8 @@ An interactive Streamlit-based web app that connects to **Tableau's Metadata API
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/intelligent-report-generator.git
-cd intelligent-report-generator
+git clone https://github.com/mok3bat/VizPilot.git
+cd VizPilot
 ````
 
 ### 2. Set up Python environment
