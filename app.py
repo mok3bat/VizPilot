@@ -89,3 +89,29 @@ with tab3:
                 st.markdown(response)
             except Exception as e:
                 st.error(f"❌ Failed to generate answer: {e}")
+
+
+# 📌 Fixed Footer with Developer Links
+st.markdown("""
+<style>
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #f0f2f6;
+    color: #6c757d;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.85rem;
+    border-top: 1px solid #ddd;
+    z-index: 100;
+}
+</style>
+
+<div class="footer">
+    👨‍💻 Developed by <a href="https://www.linkedin.com/in/mohamed-steit" target="_blank">Mo. Setit</a> |
+    <a href="https://github.com/mok3bat" target="_blank">GitHub</a> |
+    <a href="https://public.tableau.com/app/profile/mohamed6599" target="_blank">Tableau Public</a>
+</div>
+""", unsafe_allow_html=True)
