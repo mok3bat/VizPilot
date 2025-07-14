@@ -1,20 +1,21 @@
-# 📊 VizPilot
+# 📊 VizPilot — Your AI Copilot for Tableau Metadata
 
-An interactive Streamlit-based web app that connects to **Tableau's Metadata API** to help users:
+**VizPilot** is a Streamlit-based assistant designed for Tableau Cloud and Tableau Server users. It connects to the Tableau Metadata API and uses vector search with OpenAI to help you:
 
-- View all published Tableau datasources
-- Retrieve and explore detailed metadata (including fields and owners)
-- Ask natural language questions about Tableau dashboards using vector search powered by OpenAI and embeddings
+- 🔍 Search and explore published datasources
+- 🧠 Ask natural language questions about dashboards and fields
+- 📚 View detailed metadata about any Tableau datasource
+- 🧬 Automatically build a vector index from Tableau fields
 
 ---
 
 ## 🚀 Features
 
-- 🔐 Secure configuration with Tableau PATs
-- ⚡ Vector-based metadata search
-- 📚 Datasource browser and detailed field-level metadata
-- 🧠 Chroma DB for efficient semantic search
-- 🧾 Built-in support for OpenAI API
+- **Tableau Configuration Panel** – Easily connect to your Tableau environment using PATs.
+- **Vector Indexing** – Build a vector store for fast semantic search using OpenAI.
+- **Metadata Search** – Ask questions like “Which dashboards use customer name?” or “Find fields with missing descriptions.”
+- **Datasource Details** – View fields, owners, descriptions, and more for each datasource.
+- **Modular Design** – Clean structure for extending with new capabilities like lineage, usage stats, etc.
 
 ---
 
@@ -76,7 +77,26 @@ Click **💾 Save & Apply** to store the configuration for your session.
 
 ## 🧭 How to Use
 
-### 🔍 Tab 1: Ask Questions
+### 📚 Tab 1: View Datasources
+
+Click **🔍 Load Datasource List** to see all published datasources.
+
+Each datasource can be expanded to view its name, description, and LUID.
+
+---
+
+### 🧬 Tab 2: Datasource Metadata
+
+Enter a Tableau **Datasource ID (LUID)** and click **Fetch Metadata** to see detailed field-level metadata, including:
+
+* Field names
+* Types
+* Descriptions
+* Owner
+
+---
+
+### 🔍 Tab 3: Ask Questions
 
 Enter a natural language question like:
 
@@ -86,22 +106,24 @@ And get a semantic response powered by OpenAI.
 
 ---
 
-### 📚 Tab 2: View Datasources
+## 🧪 Example Use Cases
 
-Click **🔍 Load Datasource List** to see all published datasources.
-
-Each datasource can be expanded to view its name, description, and LUID.
+* Quickly find and review Tableau datasources across your organization
+* Document metadata and identify missing field descriptions
+* Search fields by description, name, or type using semantic vector search
+* Prototype future features for Tableau governance or content auditing
 
 ---
 
-### 🧬 Tab 3: Datasource Metadata
+## 🛤️ Roadmap
 
-Enter a Tableau **Datasource ID (LUID)** and click **Fetch Metadata** to see detailed field-level metadata, including:
+Planned features for upcoming releases:
 
-* Field names
-* Types
-* Descriptions
-* Owner
+* 📈 Dashboard lineage and relationships
+* 🧑‍🤝‍🧑 User/group permissions insight
+* 🗂️ Project-based filtering
+* 📦 Export metadata to CSV or Excel
+* 🧭 Content recommendation system
 
 ---
 
@@ -120,3 +142,23 @@ Enter a Tableau **Datasource ID (LUID)** and click **Fetch Metadata** to see det
 * You can extend `config_utils.py` to store credentials more securely (e.g., encrypted file or Vault integration).
 
 ---
+
+## 💬 Feedback & Feature Requests
+
+Please [open an issue](https://github.com/yourusername/vizpilot/issues) or contact me on LinkedIn if you have ideas, suggestions, or feedback. I’d love to hear from fellow Tableau users and data engineers!
+
+---
+
+## 👨‍💻 Developer Info
+
+**Author:** [Mo. Setit](https://www.linkedin.com/in/mohamed-steit)
+
+* 💼 [LinkedIn](https://www.linkedin.com/in/mohamed-steit)
+* 🌐 [GitHub](https://github.com/mok3bat)
+* 📊 [Tableau Public](https://public.tableau.com/app/profile/mohamed6599)
+
+---
+
+## 📝 License
+
+MIT License — feel free to fork, contribute, and enhance VizPilot for your team or organization.
